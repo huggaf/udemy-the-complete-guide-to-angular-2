@@ -1,0 +1,12 @@
+
+<div class="form-group">
+  <button type="button" class="btn btn-primary" (click)="onClick()">{{isOpen && 'Hide' || 'Display'}} details</button>
+</div>
+<p *ngIf="isOpen">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere velit nulla, ut malesuada orci efficitur vitae. Duis dolor dui, feugiat quis justo nec, pretium semper magna. Phasellus iaculis turpis sapien, vel tristique mi vulputate eget. Vestibulum diam eros, euismod vel ante ac, feugiat sollicitudin mi. Sed eleifend nulla dui, eget varius sem tempor et. Integer tellus tortor, pharetra pellentesque imperdiet lobortis, vehicula ut eros. In non libero finibus, blandit dui eu, sollicitudin orci. Suspendisse potenti. In ultricies a lectus a congue. Sed condimentum bibendum magna in malesuada.
+<br><br>
+Phasellus erat diam, egestas sed diam vitae, aliquet efficitur dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec cursus vehicula dapibus. Nunc vehicula efficitur neque quis congue. Quisque maximus, neque non tincidunt faucibus, nunc diam convallis ex, sit amet interdum libero sapien non tortor. Mauris cursus vehicula metus, vitae varius leo vehicula sit amet. Praesent sollicitudin tellus nisi, et posuere enim elementum ac. Curabitur fringilla ipsum vel sem semper tincidunt. Etiam neque ex, auctor auctor diam vel, vulputate imperdiet risus. Maecenas rhoncus elit dapibus velit vulputate, efficitur aliquam dolor finibus. Nam rutrum vel ante non congue. Pellentesque elementum lorem nibh, at suscipit neque viverra eu. Praesent scelerisque odio sed diam pulvinar, sit amet venenatis magna placerat.</p>
+
+<ul class="list-unstyled">
+  <li *ngFor="let log of logs; let i = index" [ngClass]="{'text-white': i > 4}" [ngStyle]="{'background-color': (i > 4 && 'blue' || '')}">{{log|date}}</li>
+</ul>
