@@ -2,8 +2,10 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'warning-alert',
-  templateUrl: './warning_alert.component.html',
-  styleUrls: ['./warning_alert.component.css']
+  template: `
+    <div class="alert alert-warning" role="alert" *ngIf="message">
+      {{ message }}
+    </div>`
 })
 export class WarningAlertComponent {
   @Input('message') message:string;

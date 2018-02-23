@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { WarningAlertComponent } from "./alerts/warning_alert.component";
+import { WarningAlertComponent } from "./alerts/warning-alert.component";
 import { SuccessAlertComponent } from "./alerts/success-alert.component";
 import { AppNavbarComponent } from "./templating/app-navbar.component";
 
