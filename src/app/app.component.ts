@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = '';
+  successAlertMessage = 'This is the success message';
+  warningAlertMessage = 'This is the warning message';
 }

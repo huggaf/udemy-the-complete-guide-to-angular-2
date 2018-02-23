@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'success_alert',
+  selector: 'success-alert',
   templateUrl: './success_alert.component.html',
   styleUrls: ['./success_alert.component.css']
 })
-export class SuccessAlert {
+export class SuccessAlertComponent {
   @Input('message') message:string;
 }
