@@ -14,4 +14,16 @@
       </ol>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <app-game-control (tick)="addNumber($event)"></app-game-control>
+      <hr>
+
+      <div *ngFor="let number of list">
+        <app-even [number]="number" *ngIf="number%2==0"></app-even>
+        <app-odd [number]="number" *ngIf="number%2==1"></app-odd>
+      </div>
+    </div>
+  </div>
 </div>
